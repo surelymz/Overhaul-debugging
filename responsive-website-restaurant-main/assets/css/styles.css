@@ -66,3 +66,34 @@
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
+/*Navigation Bar*/
+
+  /* Background color*/
+  .nav__menu{
+    background-color:black;
+    overflow:hidden; /*allow the text to go outside of the box or not. 
+    options: visible, hidden (hides the text that exceeds the box), scroll, auto*/
+}
+
+  /* Style the links*/
+  .nav__menu a{
+      float: left;
+      color:aliceblue;
+      text-align:center;
+      padding: 14px 16px; /*spaces out the texxt*/
+      text-decoration:none; /*underline or dotted etc. This line helps to take away the default underline in the link*/
+      font-size:17px;
+  }
+
+  /* Change the color of links on hover */
+  .nav__menu a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+
+  /* Add a color to the active/current link - so only the Home button*/
+  .nav__menu a.active {
+  background-color:blueviolet;
+  color: white;
+  }
